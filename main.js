@@ -1,1 +1,1 @@
-console.log("hello world"),console.log("hella worldd"),console.log("bitch");
+console.log("headsfld"),console.log("helldd"),console.log("bitch");

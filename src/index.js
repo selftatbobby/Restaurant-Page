@@ -1,17 +1,18 @@
+// console.log('hi')
+// console.log('bobby')
+// function sayCussWord() {
+//     console.log("cunt")
+// }
 
-console.log('headsfld')
-console.log('helldd')
-function sayCussWord() {
-    console.log("bitch")
-}
+// sayCussWord();
 
-sayCussWord();
+// let headerElement = document.createElement("p");
+// let contentElement = document.getElementById("content");
+// headerElement.innerText = 'hi';
+// contentElement.appendChild(headerElement); 
 
-// let header = document.createElement("p");
-// let content = document.getElementById("content");
-// header.innerText = 'hi';
-// content.append(header); 
-// console.log(content)
-// console.log(header)
+import { pageLoad } from '../src/page-load';
+
+pageLoad();
 
 

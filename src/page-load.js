@@ -1,10 +1,13 @@
-const pageLoad = () => {
-    let contentElement = document.getElementById("content");
-    let headerElement = document.createElement("div");
-    let buttonElement = document.createElement("button");
-    let buttonElement1 = document.createElement("button")
-    let buttonElement2 = document.createElement("button")
+let contentElement = document.getElementById("content");
+let headerElement = document.createElement("div");
+let buttonElement = document.createElement("button");
+let buttonElement1 = document.createElement("button")
+let buttonElement2 = document.createElement("button")
+let mainElement = document.createElement("div");
+let imageElement = document.createElement("img");
+let sloganElement = document.createElement("p");
 
+const pageLoad = () => {
     contentElement.appendChild(headerElement); 
     headerElement.appendChild(buttonElement);
     buttonElement.innerHTML = "Home";
@@ -13,16 +16,19 @@ const pageLoad = () => {
     headerElement.appendChild(buttonElement2);
     buttonElement2.innerHTML = "Contact";
 
-    let mainElement = document.createElement("div");
+    
+    mainElement.classList.add("main");
     contentElement.appendChild(mainElement);
-    let sloganElement = document.createElement("p");
+    
     sloganElement.innerHTML = "Food tastes good. At One Bite, TRY MORE with LESS!";
     mainElement.appendChild(sloganElement);
 
-    let imageElement = document.createElement("img");
+   
     imageElement.src = "../src/spoon-cereal.png";
-    contentElement.appendChild(imageElement);
+    mainElement.appendChild(imageElement);
     imageElement.alt = "Spoon of cereal"
 }
 
-export { pageLoad };
+console.log(contentElement);
+export { pageLoad, contentElement, headerElement, buttonElement, buttonElement1, buttonElement2, mainElement, imageElement, sloganElement };
+

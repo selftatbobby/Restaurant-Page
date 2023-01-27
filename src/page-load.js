@@ -29,6 +29,5 @@ const pageLoad = () => {
     imageElement.alt = "Spoon of cereal"
 }
 
-console.log(contentElement);
 export { pageLoad, contentElement, headerElement, buttonElement, buttonElement1, buttonElement2, mainElement, imageElement, sloganElement };
 

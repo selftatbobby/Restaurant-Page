@@ -4,3 +4,4 @@ Next steps:
 2. Build content for each tab/module/div page
 3. Link each module with index.js
 4. Style the webpage with CSS
+5. Load image using webpack, reconfigure image load using webpack

@@ -2,4 +2,7 @@ button {
     border: 1px solid red;
 }
 
+.tabcontent {
+    display: block;
+}
 

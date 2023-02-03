@@ -6,6 +6,7 @@ let buttonElement2 = document.createElement("button")
 let mainElement = document.createElement("div");
 let imageElement = document.createElement("img");
 let sloganElement = document.createElement("p");
+// let tabcontent = document.getElementsByClassName("tabcontent");
 
 const pageLoad = () => {
     contentElement.appendChild(headerElement); 
@@ -17,7 +18,8 @@ const pageLoad = () => {
     buttonElement2.innerHTML = "Contact";
 
     
-    mainElement.classList.add("main");
+    // mainElement.classList.add("main");
+    mainElement.classList.add("tabcontent");
     contentElement.appendChild(mainElement);
     
     sloganElement.innerHTML = "Food tastes good. At One Bite, TRY MORE with LESS!";

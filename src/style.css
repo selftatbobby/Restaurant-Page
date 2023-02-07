@@ -2,6 +2,12 @@ button {
     border: 1px solid red;
 }
 
+button.active {
+    border: 1px solid red;
+    background-color: #ccc;
+
+}
+
 .tabcontent {
     display: block;
 }

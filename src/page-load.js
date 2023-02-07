@@ -6,7 +6,7 @@ let buttonElement2 = document.createElement("button")
 let mainElement = document.createElement("div");
 let imageElement = document.createElement("img");
 let sloganElement = document.createElement("p");
-// let tabcontent = document.getElementsByClassName("tabcontent");
+let tabcontent = document.getElementsByClassName("tabcontent");
 
 const pageLoad = () => {
     contentElement.appendChild(headerElement); 
@@ -16,6 +16,9 @@ const pageLoad = () => {
     buttonElement1.innerHTML = "Menu";
     headerElement.appendChild(buttonElement2);
     buttonElement2.innerHTML = "Contact";
+    buttonElement.classList.add("tablinks");
+    buttonElement1.classList.add("tablinks");
+    buttonElement2.classList.add("tablinks");
 
     
     // mainElement.classList.add("main");
@@ -31,5 +34,5 @@ const pageLoad = () => {
     imageElement.alt = "Spoon of cereal"
 }
 
-export { pageLoad, contentElement, headerElement, buttonElement, buttonElement1, buttonElement2, mainElement, imageElement, sloganElement };
+export { pageLoad, contentElement, headerElement, buttonElement, buttonElement1, buttonElement2, mainElement, imageElement, sloganElement, tabcontent };
 

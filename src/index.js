@@ -4,6 +4,7 @@ import { pageLoad, contentElement, headerElement, buttonElement,
 
 
 pageLoad();
+buttonElement.classList.add("active");
 
 function displayReset(target) {
     var i, tablinks;  

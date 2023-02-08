@@ -9,6 +9,8 @@ let sloganElement = document.createElement("p");
 let tabcontent = document.getElementsByClassName("tabcontent");
 
 const pageLoad = () => {
+
+    //Add button elements to contentElement
     contentElement.appendChild(headerElement); 
     headerElement.appendChild(buttonElement);
     buttonElement.innerHTML = "Home";
@@ -21,16 +23,17 @@ const pageLoad = () => {
     buttonElement2.classList.add("tablinks");
 
     
-    // mainElement.classList.add("main");
-    mainElement.classList.add("tabcontent");
+    //Add content elements to contentElement
     contentElement.appendChild(mainElement);
+    mainElement.classList.add("tabcontent");
     
-    sloganElement.innerHTML = "Food tastes good. At One Bite, TRY MORE with LESS!";
     mainElement.appendChild(sloganElement);
+    sloganElement.innerHTML = "Food tastes good. At One Bite, TRY MORE with LESS!";
+    
 
-   
-    imageElement.src = "../src/spoon-cereal.png";
+    //Add image content to mainElement
     mainElement.appendChild(imageElement);
+    imageElement.src = "../src/spoon-cereal.png";
     imageElement.alt = "Spoon of cereal"
 }
 

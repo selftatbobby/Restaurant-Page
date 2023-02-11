@@ -6,7 +6,7 @@ import { pageLoad, contentElement, headerElement, buttonElement,
 pageLoad();
 buttonElement.classList.add("active");
 
-function displayReset(target, index) {
+function displayReset(e, index) {
     var i, tablinks;  
 
     //Set all tabcontent classed elements' display to none
@@ -21,8 +21,10 @@ function displayReset(target, index) {
     }
 
     //Adds 'active' class to current target button
-    target.currentTarget.className += " active";
-    console.log(target.currentTarget);
+    //e.currentTarget is only available whle the event is being handled
+    e.currentTarget.className += " active";
+    console.log(e.currentTarget);
+    console.log(this);
 
     //Shows the selected tab's content
     // tabcontent[index].style.display = "block";

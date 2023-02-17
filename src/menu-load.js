@@ -9,6 +9,9 @@ const menuLoad = () => {
 
     menuContent.innerHTML = "The Menu";
     menuElement.appendChild(menuContent);
+
+    //Hide menuElement
+    menuElement.style.display = "none";
     
 }
 

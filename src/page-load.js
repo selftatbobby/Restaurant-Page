@@ -1,3 +1,5 @@
+import spoonCereal from "../src/spoon-cereal.png";
+
 let contentElement = document.getElementById("content");
 let headerElement = document.createElement("div");
 let buttonElement = document.createElement("button");
@@ -33,7 +35,8 @@ const pageLoad = () => {
 
     //Add image content to mainElement
     mainElement.appendChild(imageElement);
-    imageElement.src = "../src/spoon-cereal.png";
+    // imageElement.src = "../src/spoon-cereal.png";
+    imageElement.src = spoonCereal;
     imageElement.alt = "Spoon of cereal"
 }
 

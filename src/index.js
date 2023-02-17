@@ -2,10 +2,47 @@ import "./style.css";
 import { pageLoad, contentElement, headerElement, buttonElement, 
     buttonElement1, buttonElement2, mainElement, imageElement, sloganElement, tabcontent } from "./page-load";
 import { menuLoad, menuElement, menuContent } from "./menu-load";
+import { contactLoad, contactElement, contactContent } from "./contact-load";
 
+let displayTab0 = () => {
+    var i;  
+
+    //Set all tabcontent classed elements' display to none
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    //Shows the selected tab's content
+    tabcontent[0].style.display = "block";
+}
+
+let displayTab1 = () => {
+    var i;  
+
+    //Set all tabcontent classed elements' display to none
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    //Shows the selected tab's content
+    tabcontent[1].style.display = "block";
+}
+
+let displayTab2 = () => {
+    var i;  
+
+    //Set all tabcontent classed elements' display to none
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    //Shows the selected tab's content
+    tabcontent[2].style.display = "block";
+}
 
 pageLoad();
 menuLoad();
+contactLoad();
 
 buttonElement.classList.add("active");
 
@@ -36,6 +73,8 @@ function displayTab(index) {
 
 }
 
+
+
 //highlights selected tab, dehighlights others, and hides all tab content
 function currentTab(e) {
     var i, tablinks;
@@ -63,12 +102,13 @@ function currentTab(e) {
 
 
 buttonElement.addEventListener("click", currentTab);
-buttonElement.addEventListener("click", displayTab(0))
+buttonElement.addEventListener("click", displayTab0)
 
 buttonElement1.addEventListener("click", currentTab);
-buttonElement1.addEventListener("click", displayTab(1));
+buttonElement1.addEventListener("click", displayTab1);
 
 buttonElement2.addEventListener("click", currentTab);
+buttonElement2.addEventListener("click", displayTab2);
 
 // buttonElement.onclick = displayReset;
 // buttonElement.addEventListener("click", displayReset);

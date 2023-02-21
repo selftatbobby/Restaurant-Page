@@ -7,7 +7,7 @@ const menuLoad = () => {
     contentElement.appendChild(menuElement);
     menuElement.classList.add("tabcontent");
 
-    menuContent.innerHTML = "The Menu";
+    menuContent.innerHTML = "The Menu: We specialize in a several bites that are world renowned for even the pickiest toddlers.";
     menuElement.appendChild(menuContent);
 
     //Hide menuElement
